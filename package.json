@@ -1,0 +1,49 @@
+{
+  "name": "cs2-inspect-link",
+  "version": "1.0.0",
+  "description": "Read a CS2 inspect link: float, pattern, stickers, charms and more, offline, from the link alone. One function, no dependencies.",
+  "keywords": [
+    "cs2",
+    "csgo",
+    "counter-strike",
+    "inspect",
+    "inspect-link",
+    "float",
+    "paint-seed",
+    "pattern",
+    "stickers",
+    "charms",
+    "skins"
+  ],
+  "homepage": "https://github.com/apiskins/cs2-inspect-link#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiskins/cs2-inspect-link.git"
+  },
+  "bugs": "https://github.com/apiskins/cs2-inspect-link/issues",
+  "license": "MIT",
+  "author": "API Skins (https://apiskins.com)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
+}
